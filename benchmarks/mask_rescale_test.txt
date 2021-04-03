@@ -1,0 +1,125 @@
+python tools/test.py ../configs/mask_rcnn_taco_rescale.py work_dirs/mask_rcnn_taco_rescale/epoch_120.pth --eval segm bbox proposal --eval-options classwise=True                                                                          ±[●][master]
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 142/142, 1.6 task/s, elapsed: 89s, ETA:     0s
+Evaluating segm...
+Loading and preparing results...
+DONE (t=0.01s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *segm*
+DONE (t=0.34s).
+Accumulating evaluation results...
+DONE (t=0.18s).
+Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.127
+Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.159
+Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.136
+Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.022
+Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.064
+Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.150
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.320
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.320
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.320
+Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.021
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.093
+Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.367
+
++---------------------------+-------+------------------------+-------+-------------------------+-------+
+| category                  | AP    | category               | AP    | category                | AP    |
++---------------------------+-------+------------------------+-------+-------------------------+-------+
+| Aluminium foil            | 0.425 | Battery                | nan   | Aluminium blister pack  | 0.000 |
+| Carded blister pack       | nan   | Other plastic bottle   | 0.069 | Clear plastic bottle    | 0.431 |
+| Glass bottle              | 0.028 | Plastic bottle cap     | 0.270 | Metal bottle cap        | 0.109 |
+| Broken glass              | 0.001 | Food Can               | 0.718 | Aerosol                 | 1.000 |
+| Drink can                 | 0.331 | Toilet tube            | 0.000 | Other carton            | 0.123 |
+| Egg carton                | 0.000 | Drink carton           | 0.026 | Corrugated carton       | 0.182 |
+| Meal carton               | 0.077 | Pizza box              | nan   | Paper cup               | 0.123 |
+| Disposable plastic cup    | 0.070 | Foam cup               | 0.000 | Glass cup               | nan   |
+| Other plastic cup         | nan   | Food waste             | nan   | Glass jar               | 0.362 |
+| Plastic lid               | 0.076 | Metal lid              | 0.144 | Other plastic           | 0.053 |
+| Magazine paper            | nan   | Tissues                | 0.046 | Wrapping paper          | 0.050 |
+| Normal paper              | 0.014 | Paper bag              | 0.232 | Plastified paper bag    | nan   |
+| Plastic film              | 0.120 | Six pack rings         | 0.000 | Garbage bag             | 0.019 |
+| Other plastic wrapper     | 0.077 | Single-use carrier bag | 0.059 | Polypropylene bag       | nan   |
+| Crisp packet              | 0.101 | Spread tub             | 0.000 | Tupperware              | 0.000 |
+| Disposable food container | 0.010 | Foam food container    | 0.135 | Other plastic container | 0.000 |
+| Plastic glooves           | nan   | Plastic utensils       | 0.112 | Pop tab                 | 0.040 |
+| Rope & strings            | 0.006 | Scrap metal            | 0.000 | Shoe                    | nan   |
+| Squeezable tube           | 0.000 | Plastic straw          | 0.114 | Paper straw             | nan   |
+| Styrofoam piece           | 0.304 | Unlabeled litter       | 0.030 | Cigarette               | 0.018 |
++---------------------------+-------+------------------------+-------+-------------------------+-------+
+
+Evaluating bbox...
+Loading and preparing results...
+DONE (t=0.01s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.24s).
+Accumulating evaluation results...
+DONE (t=0.18s).
+Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.123
+Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.170
+Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.134
+Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.025
+Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.071
+Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.144
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.296
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.296
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.296
+Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.024
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.099
+Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.340
+
++---------------------------+-------+------------------------+-------+-------------------------+-------+
+| category                  | AP    | category               | AP    | category                | AP    |
++---------------------------+-------+------------------------+-------+-------------------------+-------+
+| Aluminium foil            | 0.450 | Battery                | nan   | Aluminium blister pack  | 0.000 |
+| Carded blister pack       | nan   | Other plastic bottle   | 0.062 | Clear plastic bottle    | 0.377 |
+| Glass bottle              | 0.018 | Plastic bottle cap     | 0.291 | Metal bottle cap        | 0.109 |
+| Broken glass              | 0.005 | Food Can               | 0.619 | Aerosol                 | 0.800 |
+| Drink can                 | 0.273 | Toilet tube            | 0.000 | Other carton            | 0.110 |
+| Egg carton                | 0.000 | Drink carton           | 0.020 | Corrugated carton       | 0.161 |
+| Meal carton               | 0.064 | Pizza box              | nan   | Paper cup               | 0.114 |
+| Disposable plastic cup    | 0.072 | Foam cup               | 0.000 | Glass cup               | nan   |
+| Other plastic cup         | nan   | Food waste             | nan   | Glass jar               | 0.304 |
+| Plastic lid               | 0.075 | Metal lid              | 0.133 | Other plastic           | 0.048 |
+| Magazine paper            | nan   | Tissues                | 0.043 | Wrapping paper          | 0.050 |
+| Normal paper              | 0.012 | Paper bag              | 0.232 | Plastified paper bag    | nan   |
+| Plastic film              | 0.117 | Six pack rings         | 0.000 | Garbage bag             | 0.014 |
+| Other plastic wrapper     | 0.112 | Single-use carrier bag | 0.039 | Polypropylene bag       | nan   |
+| Crisp packet              | 0.112 | Spread tub             | 0.000 | Tupperware              | 0.000 |
+| Disposable food container | 0.010 | Foam food container    | 0.135 | Other plastic container | 0.000 |
+| Plastic glooves           | nan   | Plastic utensils       | 0.140 | Pop tab                 | 0.079 |
+| Rope & strings            | 0.248 | Scrap metal            | 0.000 | Shoe                    | nan   |
+| Squeezable tube           | 0.000 | Plastic straw          | 0.111 | Paper straw             | nan   |
+| Styrofoam piece           | 0.267 | Unlabeled litter       | 0.031 | Cigarette               | 0.026 |
++---------------------------+-------+------------------------+-------+-------------------------+-------+
+
+Evaluating proposal...
+Loading and preparing results...
+DONE (t=0.01s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.31s).
+Accumulating evaluation results...
+DONE (t=0.04s).
+Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.237
+Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.390
+Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.258
+Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.039
+Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.125
+Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.349
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.408
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.408
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.408
+Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.036
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.243
+Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.583
+{'segm_mAP': 0.127, 'segm_mAP_50': 0.159, 'segm_mAP_75': 0.136, 'segm_mAP_s': 0.022, 'segm_mAP_m': 0.064, 'segm_mAP_l': 0.15, 'segm_mAP_copypaste': '0.127 0.159 0.136 0.022 0.064 0.150', 'bbox_mAP': 0.123, 'bbox_mAP_50': 0.17, 'bbox_mAP_75': 0.134, 'bbox_mAP_s': 0.025, 'bbox_mAP_m': 0.071, 'bbox_mAP_l': 0.144, 'bbox_mAP_copypaste': '0.123 0.170 0.134 0.025 0.071 0.144', 'mAP': 0.237, 'mAP_50': 0.39, 'mAP_75': 0.258, 'mAP_s': 0.039, 'mAP_m': 0.125, 'mAP_l': 0.349}

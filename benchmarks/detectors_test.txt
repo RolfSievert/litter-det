@@ -1,0 +1,49 @@
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 142/142, 0.4 task/s, elapsed: 328s, ETA:     0s
+writing results to ../benchmarks/detectors_test.pkl
+
+Evaluating bbox...
+Loading and preparing results...
+DONE (t=0.02s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.95s).
+Accumulating evaluation results...
+DONE (t=0.43s).
+Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.160
+Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.207
+Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.179
+Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.047
+Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.128
+Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.181
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.460
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.460
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.460
+Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.053
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.212
+Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.494
+
+Evaluating segm...
+Loading and preparing results...
+DONE (t=0.14s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *segm*
+DONE (t=0.95s).
+Accumulating evaluation results...
+DONE (t=0.43s).
+Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.164
+Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.205
+Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.183
+Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.041
+Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.116
+Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.186
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.452
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.452
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.452
+Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.050
+Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.172
+Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.487
+OrderedDict([('bbox_mAP', 0.16), ('bbox_mAP_50', 0.207), ('bbox_mAP_75', 0.179), ('bbox_mAP_s', 0.047), ('bbox_mAP_m', 0.128), ('bbox_mAP_l', 0.181), ('bbox_mAP_copypaste', '0.160 0.207 0.179 0.047 0.128 0.181'), ('segm_mAP', 0.164), ('segm_mAP_50', 0.205), ('segm_mAP_75', 0.183), ('segm_mAP_s', 0.041), ('segm_mAP_m', 0.116), ('segm_mAP_l', 0.186), ('segm_mAP_copypaste', '0.164 0.205 0.183 0.041 0.116 0.186')])

@@ -1,0 +1,7 @@
+.venv
+mmdetection
+data/**
+checkpoints/**
+TACO
+*.pkl
+tools/external
